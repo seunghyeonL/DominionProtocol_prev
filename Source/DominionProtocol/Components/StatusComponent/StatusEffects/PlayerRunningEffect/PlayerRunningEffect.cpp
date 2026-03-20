@@ -71,8 +71,6 @@ void UPlayerRunningEffect::Deactivate()
 	
 	auto MovementComponent = Cast<UCharacterMovementComponent>(OwnerCharacter->GetMovementComponent());
 	MovementComponent->MaxWalkSpeed /= SpeedCoefficient;
-
-	StatusComponent->StartStaminaRecovery();
 }
 
 void UPlayerRunningEffect::Tick(float DeltaTime)
