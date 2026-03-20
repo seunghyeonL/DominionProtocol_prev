@@ -85,6 +85,16 @@ public:
 	virtual FString GetPawnName_Implementation() override;
 	virtual FGameplayTag GetPawnTag_Implementation() override;
 
+	// Dormancy
+	UFUNCTION(BlueprintCallable, Category = "AI|Dormancy")
+	virtual void DormancyOn();
+
+	UFUNCTION(BlueprintCallable, Category = "AI|Dormancy")
+	virtual void DormancyOff();
+
+	UFUNCTION(BlueprintCallable, Category = "AI|Dormancy")
+	FORCEINLINE bool IsDormant() const { return bIsDormant; }
+
 	// LockOnComponent
 	FORCEINLINE FVector GetLockOnLocation() const { return LockOnComponent->GetComponentLocation(); }
 
@@ -125,4 +135,9 @@ protected:
 
 	UPROPERTY(BlueprintReadOnly, EditAnywhere)
 	FString MonsterName;
+
+	bool bIsDormant = false;
+
+	// Dormancy 진입 전 Tick이 활성화되어 있던 컴포넌트 목록 (복원용)
+	TArray<TWeakObjectPtr<UActorComponent>> CachedTickingComponents;
 };

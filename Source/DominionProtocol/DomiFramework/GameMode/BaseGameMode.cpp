@@ -23,7 +23,10 @@
 #include "LevelSequencePlayer.h"
 #include "MovieSceneSequencePlaybackSettings.h"
 #include "MovieScene.h"
+#include "AI/AICharacters/BossMonster/BaseBossEnemy.h"
 #include "AI/AICharacters/BossMonster/Boss1Enemy.h"
+#include "AI/AIControllers/BaseAIController.h"
+#include "Components/AIComponent/AIStateComponent.h"
 #include "Engine/Engine.h"
 #include "Components/AudioComponent.h"
 #include "Engine/ExponentialHeightFog.h"
@@ -196,6 +199,13 @@ void ABaseGameMode::StartPlay()
 		this,
 		&ABaseGameMode::PlayTimeAdder,
 		60.f,
+		true);
+
+	World->GetTimerManager().SetTimer(
+		DormancyCheckTimer,
+		this,
+		&ABaseGameMode::CheckAIDormancy,
+		0.5f,
 		true);
 
 	// AssetLoadDelay 후 페이드인
@@ -535,6 +545,52 @@ void ABaseGameMode::UpdateInstanceData()
 	SaveItemDataToInstance();
 	// 플레이타임 인스턴스 전달
 	GameInstance->AddPlayTime(GetPlayTime());
+}
+
+void ABaseGameMode::CheckAIDormancy()
+{
+	if (!IsValid(World)) return;
+
+	APawn* PlayerPawn = UGameplayStatics::GetPlayerPawn(World, 0);
+	if (!IsValid(PlayerPawn)) return;
+
+	const FVector PlayerLocation = PlayerPawn->GetActorLocation();
+
+	constexpr double DormancyOffDistSq = 5000.0 * 5000.0;
+	constexpr double DormancyOnDistSq = 4500.0 * 4500.0;
+
+	TArray<AActor*> Enemies;
+	UGameplayStatics::GetAllActorsOfClass(World, ABaseEnemy::StaticClass(), Enemies);
+
+	for (AActor* Actor : Enemies)
+	{
+		ABaseEnemy* Enemy = Cast<ABaseEnemy>(Actor);
+		if (!IsValid(Enemy)) continue;
+
+		// 보스 제외
+		if (Enemy->IsA(ABaseBossEnemy::StaticClass())) continue;
+
+		const double DistSq = FVector::DistSquared(PlayerLocation, Enemy->GetActorLocation());
+
+		if (!Enemy->IsDormant() && DistSq > DormancyOffDistSq)
+		{
+			// 가드: Idle 상태이고 스킬 미사용 중일 때만 Dormancy 진입
+			if (ABaseAIController* BaseAIC = Cast<ABaseAIController>(Enemy->GetController()))
+			{
+				if (UAIStateComponent* StateComp = BaseAIC->GetAIStateComponent())
+				{
+					if (StateComp->GetCurrentStateTag() != EffectTags::Idle) continue;
+				}
+				if (BaseAIC->IsUsingSkill()) continue;
+			}
+
+			Enemy->DormancyOff();
+		}
+		else if (Enemy->IsDormant() && DistSq < DormancyOnDistSq)
+		{
+			Enemy->DormancyOn();
+		}
+	}
 }
 
 void ABaseGameMode::PlayTimeAdder()

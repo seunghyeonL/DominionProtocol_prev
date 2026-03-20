@@ -92,6 +92,8 @@ public:
 	//Setter
 	FORCEINLINE void SetRecentCrackCache(ACrack* NewCrack) { RecentCrackCache = NewCrack ; }
 
+	void CheckAIDormancy();
+
 protected:
 	void PlayTimeAdder();
 
@@ -194,6 +196,8 @@ protected:
 	int32 PlayTime;
 
 	FTimerHandle PlayTimer;
+
+	FTimerHandle DormancyCheckTimer;
 
 	FTimerHandle Boss1FogDisappearTimerHandle;
 

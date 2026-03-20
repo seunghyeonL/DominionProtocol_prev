@@ -2,6 +2,8 @@
 
 
 #include "BaseEnemy.h"
+#include "AIController.h"
+#include "BrainComponent.h"
 #include "Components/StatusComponent/StatusComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "Components/WidgetComponent.h"
@@ -11,6 +13,7 @@
 #include "Components/StatusComponent/StatusComponentInitializeData.h"
 #include "Components/WidgetComponent/DomiWidgetComponent.h"
 #include "DomiFramework/GameState/BaseGameState.h"
+#include "GameFramework/CharacterMovementComponent.h"
 #include "WorldObjects/Essence.h"
 
 // Sets default values
@@ -245,6 +248,66 @@ void ABaseEnemy::SendEffectUIDatas_Implementation() const
 FString ABaseEnemy::GetPawnName_Implementation()
 {
 	return MonsterName;
+}
+
+void ABaseEnemy::DormancyOn()
+{
+	if (!bIsDormant) return;
+	bIsDormant = false;
+
+	SetActorTickEnabled(true);
+
+	// 캐싱된 컴포넌트만 Tick 복원
+	for (const TWeakObjectPtr<UActorComponent>& WeakComp : CachedTickingComponents)
+	{
+		if (WeakComp.IsValid())
+		{
+			WeakComp->SetComponentTickEnabled(true);
+		}
+	}
+	CachedTickingComponents.Empty();
+
+	if (AAIController* AIC = Cast<AAIController>(GetController()))
+	{
+		if (UBrainComponent* BrainComp = AIC->GetBrainComponent())
+		{
+			BrainComp->ResumeLogic(TEXT("Dormancy"));
+		}
+	}
+}
+
+void ABaseEnemy::DormancyOff()
+{
+	if (bIsDormant) return;
+	bIsDormant = true;
+
+	SetActorTickEnabled(false);
+
+	// Tick이 켜져있는 컴포넌트만 캐싱 후 끄기
+	CachedTickingComponents.Empty();
+	TArray<UActorComponent*> Components;
+	GetComponents(Components);
+	for (UActorComponent* Comp : Components)
+	{
+		if (Comp->PrimaryComponentTick.bCanEverTick && Comp->IsComponentTickEnabled())
+		{
+			CachedTickingComponents.Add(Comp);
+			Comp->SetComponentTickEnabled(false);
+		}
+	}
+
+	if (AAIController* AIC = Cast<AAIController>(GetController()))
+	{
+		if (UBrainComponent* BrainComp = AIC->GetBrainComponent())
+		{
+			BrainComp->PauseLogic(TEXT("Dormancy"));
+		}
+	}
+
+	if (UCharacterMovementComponent* MovComp = GetCharacterMovement())
+	{
+		MovComp->StopMovementImmediately();
+	}
 }
 
 void ABaseEnemy::InitializeStatusComponent()
