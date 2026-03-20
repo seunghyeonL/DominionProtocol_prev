@@ -168,8 +168,11 @@ void ABaseEnemy::OnAttacked_Implementation(const FAttackData& AttackData)
 		StatusComponent->SetGroggyGauge(CurrentGroggyGauge - AttackData.GroggyDamage);
 	}
 
-	LaunchCharacter(AttackData.LaunchVector, true, true);
-
+	if (!AttackData.LaunchVector.IsNearlyZero())
+	{
+		LaunchCharacter(AttackData.LaunchVector, true, true);
+	}
+	
 	// Activate Effects
 	for (FEffectData EffectData : AttackData.Effects)
 	{
