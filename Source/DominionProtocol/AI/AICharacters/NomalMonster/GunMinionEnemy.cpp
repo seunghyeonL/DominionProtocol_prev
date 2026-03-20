@@ -9,14 +9,3 @@ AGunMinionEnemy::AGunMinionEnemy()
 
 	EssenceAmount = 55.f;
 }
-
-void AGunMinionEnemy::Attack()
-{
-	if (AttackMontage == nullptr) return;
-
-	UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
-	if (AnimInstance && !AnimInstance->Montage_IsPlaying(AttackMontage))
-	{
-		AnimInstance->Montage_Play(AttackMontage);
-	}
-}
