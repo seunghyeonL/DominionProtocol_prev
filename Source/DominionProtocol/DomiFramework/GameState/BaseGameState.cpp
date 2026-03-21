@@ -354,6 +354,9 @@ void ABaseGameState::InitializeCrackDataMap()
 			CrackDataArray.CrackDataArray.Add(NewCrackData);
 		}
 	}
+
+	// 크랙 초기화 완료 후 NewGame 플래그 해제 (불필요한 재초기화 방지)
+	WorldInstanceSubsystem->SetIsNewGame(WorldInstanceSubsystem->GetCurrentLevelName(), false);
 }
 
 void ABaseGameState::InitializeZeroIndexCrackData(const FString CurrentLevelName)

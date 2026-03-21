@@ -27,7 +27,7 @@ void USaveManagerSubsystem::Initialize(FSubsystemCollectionBase& Collection)
 		SaveSlotArray[i].PlayingLevelName = "PresentLevel";
 		SaveSlotArray[i].PlayingLevelDisplayName = FText::FromString(TEXT("2375 에어로발리스카"));
 	}
-
+	
 	// 저장된 설정이 있다면 로드
 	LoadSettings();
 }
@@ -66,7 +66,7 @@ void USaveManagerSubsystem::LoadSaveDataAndOpenLevel(int32 SlotIndex)
 	{
 		if (SaveSlotArray[SlotIndex].SaveSlotExist)
 		{
-			LoadGame(SaveSlotArray[SlotIndex].SaveSlotName, SaveSlotArray[SlotIndex].SaveSlotIndex);
+			const bool bLoadResult = LoadGame(SaveSlotArray[SlotIndex].SaveSlotName, SaveSlotArray[SlotIndex].SaveSlotIndex);
 			UGameplayStatics::OpenLevel(World, FName(SaveSlotArray[SlotIndex].PlayingLevelName));
 		}
 	}
@@ -116,14 +116,14 @@ bool USaveManagerSubsystem::LoadGame(const FString& SlotName, int32 UserIndex)
 {
 	if (!UGameplayStatics::DoesSaveGameExist(SlotName, UserIndex))
 	{
-		Debug::PrintError(TEXT("Invalid SaveSlot"));
+		UE_LOG(LogTemp, Error, TEXT("[LoadGame] FAIL - Save file does not exist: %s (UserIndex=%d)"), *SlotName, UserIndex);
 		return false;
 	}
 
 	UDomiSaveGame* LoadedGame = Cast<UDomiSaveGame>(UGameplayStatics::LoadGameFromSlot(SlotName, UserIndex));
 	if (!IsValid(LoadedGame))
 	{
-		Debug::PrintError(TEXT("Load GameData Failed"));
+		UE_LOG(LogTemp, Error, TEXT("[LoadGame] FAIL - Could not deserialize: %s"), *SlotName);
 		return false;
 	}
 
@@ -134,21 +134,20 @@ bool USaveManagerSubsystem::LoadGame(const FString& SlotName, int32 UserIndex)
 		GameInstance->LoadSaveData(LoadedGame->InstanceData);
 	}
 
-	//ItemInstanceSubsystem SaveData Load(FSoundSubsystemData)
+	//ItemInstanceSubsystem SaveData Load
 	UItemInstanceSubsystem* ItemInstanceSubsystem = GameInstance->GetSubsystem<UItemInstanceSubsystem>();
 	if (IsValid(ItemInstanceSubsystem))
 	{
 		ItemInstanceSubsystem->LoadSaveData(LoadedGame->ItemSubsystemData);
 	}
 
-	//WorldInstanceSubsystem SaveData Load(FSoundSubsystemData)
+	//WorldInstanceSubsystem SaveData Load
 	UWorldInstanceSubsystem* WorldInstanceSubsystem = GameInstance->GetSubsystem<UWorldInstanceSubsystem>();
 	if (IsValid(WorldInstanceSubsystem))
 	{
 		WorldInstanceSubsystem->LoadSaveData(LoadedGame->WorldInstanceSubsystemData);
 	}
-
-	Debug::Print(TEXT("Success Load All Data "));
+	
 	return true;
 }
 
@@ -177,14 +176,14 @@ bool USaveManagerSubsystem::LoadSettings()
 {
 	if (!UGameplayStatics::DoesSaveGameExist(FString::Printf(TEXT("UserSettings")), 999))
 	{
-		Debug::Print(TEXT("No existing user settings found, using defaults"));
+		UE_LOG(LogTemp, Warning, TEXT("[LoadSettings] No existing user settings found, using defaults."));
 		return false;
 	}
 
 	UDomiSaveSettings* LoadedGame = Cast<UDomiSaveSettings>(UGameplayStatics::LoadGameFromSlot(FString::Printf(TEXT("UserSettings")), 999));
 	if (!IsValid(LoadedGame))
 	{
-		Debug::PrintError(TEXT("Load GameData Failed"));
+		UE_LOG(LogTemp, Warning, TEXT("[LoadSettings] Load GameData Failed."));
 		return false;
 	}
 
@@ -193,6 +192,15 @@ bool USaveManagerSubsystem::LoadSettings()
 
 	SaveSlotArray = LoadedGame->SaveSlotMetaDataArray;
 	
+	for (int32 i = 0; i < SaveSlotArray.Num(); i++)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("[LoadSettings] Slot[%d]: Exist=%s, Level=%s, Crack=%s"),
+			i,
+			SaveSlotArray[i].SaveSlotExist ? TEXT("true") : TEXT("false"),
+			*SaveSlotArray[i].PlayingLevelName,
+			*SaveSlotArray[i].RecentCrackName.ToString());
+	}
+
 	//SoundInstanceSubsystem SaveData Load(FSoundSubsystemData)
 	USoundInstanceSubsystem* SoundSubsystem = GameInstance->GetSubsystem<USoundInstanceSubsystem>();
 	if (IsValid(SoundSubsystem))

@@ -252,12 +252,26 @@ void ABaseGameMode::Save()
 	NewSaveSlotMetaData.PlayTime = SaveManagerSubsystem->GetPlayTime(GameInstance->GetSaveSlotIndex()) + PlayTime;
 	NewSaveSlotMetaData.PlayingLevelName = WorldInstanceSubsystem->GetCurrentLevelName();
 	NewSaveSlotMetaData.PlayingLevelDisplayName = WorldInstanceSubsystem->GetCurrentLevelDisplayName();
-	NewSaveSlotMetaData.RecentCrackName = RecentCrackCache->GetCrackName();
+	NewSaveSlotMetaData.RecentCrackName = WorldInstanceSubsystem->GetRecentCrackName();
 	NewSaveSlotMetaData.PlayerLevel = static_cast<int32>(PlayerCharacter->GetStatusComponent()->GetStat(StatTags::Level));
 	
+	// UE_LOG(LogTemp, Warning, TEXT("[Save] SlotIndex=%d, SlotName=%s, PlayingLevel=%s, SaveSlotExist=%s, CrackName=%s"),
+	// 	NewSaveSlotMetaData.SaveSlotIndex,
+	// 	*NewSaveSlotMetaData.SaveSlotName,
+	// 	*NewSaveSlotMetaData.PlayingLevelName,
+	// 	NewSaveSlotMetaData.SaveSlotExist ? TEXT("true") : TEXT("false"),
+	// 	*NewSaveSlotMetaData.RecentCrackName.ToString());
+
 	SaveManagerSubsystem->SetSaveSlotData(NewSaveSlotMetaData.SaveSlotIndex, NewSaveSlotMetaData);
-	SaveManagerSubsystem->SaveSettings();
-	SaveManagerSubsystem->SaveGame(GameInstance->GetSaveSlotName(), GameInstance->GetSaveSlotIndex());
+	const bool bSettingsResult = SaveManagerSubsystem->SaveSettings();
+	const bool bGameResult = SaveManagerSubsystem->SaveGame(GameInstance->GetSaveSlotName(), GameInstance->GetSaveSlotIndex());
+
+	// UE_LOG(LogTemp, Warning, TEXT("[Save] SaveSettings=%s, SaveGame=%s"),
+	// 	bSettingsResult ? TEXT("OK") : TEXT("FAIL"),
+	// 	bGameResult ? TEXT("OK") : TEXT("FAIL"));
+
+	// 저장 후 세션 PlayTime 리셋 (이중 누적 방지)
+	PlayTime = 0;
 }
 
 void ABaseGameMode::MoveToRecentCrack()
@@ -414,6 +428,17 @@ void ABaseGameMode::MoveToTargetCrack(FString InOwningCrackLevelName, int32 InCr
 		MoveTargetLevelName = FName(InOwningCrackLevelName);
 		Debug::Print(TEXT("Move Another Level"));
 		WorldInstanceSubsystem->SwitchIsLevelChanged();
+
+		// 타겟 레벨로 CurrentLevelName 갱신 (Save 전에 올바른 레벨명 저장)
+		WorldInstanceSubsystem->SetCurrentLevelName(InOwningCrackLevelName);
+		if (InOwningCrackLevelName.Contains(TEXT("PresentLevel")) || InOwningCrackLevelName.Contains(TEXT("Level1")))
+		{
+			WorldInstanceSubsystem->SetCurrentLevelDisplayName(FText::FromString(TEXT("2375 에어로발리스카")));
+		}
+		else if (InOwningCrackLevelName.Contains(TEXT("PastLevel")) || InOwningCrackLevelName.Contains(TEXT("Level 2")))
+		{
+			WorldInstanceSubsystem->SetCurrentLevelDisplayName(FText::FromString(TEXT("1168 발리스카")));
+		}
 	}
 	Save();
 }
