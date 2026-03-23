@@ -72,6 +72,8 @@ namespace StatTags
 	UE_DEFINE_GAMEPLAY_TAG(MagicPowerCoefficient, "Stat.Coefficient.MagicPower");
 	UE_DEFINE_GAMEPLAY_TAG(MaxHealthCoefficient, "Stat.Coefficient.MaxHealth");
 	UE_DEFINE_GAMEPLAY_TAG(MaxStaminaCoefficient, "Stat.Coefficient.MaxStamina");
+	UE_DEFINE_GAMEPLAY_TAG(SoftCapThreshold, "Stat.Coefficient.SoftCapThreshold");
+	UE_DEFINE_GAMEPLAY_TAG(PostSoftCapMultiplier, "Stat.Coefficient.PostSoftCapMultiplier");
 	UE_DEFINE_GAMEPLAY_TAG(LevelUpCoefficientB, "Stat.Coefficient.LevelUpB");
 	UE_DEFINE_GAMEPLAY_TAG(LevelUpCoefficientC, "Stat.Coefficient.LevelUpC");
 	UE_DEFINE_GAMEPLAY_TAG(LevelUpCoefficientD, "Stat.Coefficient.LevelUpD");

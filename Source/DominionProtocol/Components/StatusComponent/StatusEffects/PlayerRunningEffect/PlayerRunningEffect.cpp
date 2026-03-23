@@ -71,6 +71,9 @@ void UPlayerRunningEffect::Deactivate()
 	
 	auto MovementComponent = Cast<UCharacterMovementComponent>(OwnerCharacter->GetMovementComponent());
 	MovementComponent->MaxWalkSpeed /= SpeedCoefficient;
+
+	// 달리기 종료 시 스태미너 회복 재개
+	StatusComponent->StartStaminaRecovery();
 }
 
 void UPlayerRunningEffect::Tick(float DeltaTime)

@@ -105,6 +105,9 @@ public:
 	float GetCalculatedBattleStat(const FGameplayTag& StatTag, const TMap<FGameplayTag, float>& InStatMap) const;
 	float GetMaxVariableStat(const FGameplayTag& StatTag) const;
 
+	// 소프트캡 적용 스케일링: SoftCap 이전은 Coefficient × √Stat, 이후는 효율 감소
+	float GetSoftCappedScaling(float StatValue, float Coefficient) const;
+
 	// Getter/Setter with Delegate
 	UFUNCTION(BlueprintCallable)
 	void SetHealth(const float NewHealth);

@@ -193,6 +193,28 @@ float UStatusComponent::GetLevelUpRequiredEssence(const float InLevel) const
 	);
 }
 
+float UStatusComponent::GetSoftCappedScaling(float StatValue, float Coefficient) const
+{
+	const float SoftCap = GetStat(StatTags::SoftCapThreshold);
+	const float PostCapMult = GetStat(StatTags::PostSoftCapMultiplier);
+
+	// SoftCap이 설정되지 않았거나 0 이하이면 기존 sqrt 방식 사용
+	if (SoftCap <= 0.f)
+	{
+		return Coefficient * FMath::Sqrt(StatValue);
+	}
+
+	if (StatValue <= SoftCap)
+	{
+		return Coefficient * FMath::Sqrt(StatValue);
+	}
+
+	// 소프트캡 이전 구간 최대값 + 이후 구간 (효율 감소)
+	const float PreCapValue = Coefficient * FMath::Sqrt(SoftCap);
+	const float PostCapValue = (Coefficient * PostCapMult) * (FMath::Sqrt(StatValue) - FMath::Sqrt(SoftCap));
+	return PreCapValue + PostCapValue;
+}
+
 float UStatusComponent::GetCalculatedBattleStat(const FGameplayTag& StatTag, const TMap<FGameplayTag, float>& InStatMap) const
 {
 	if (!StatTag.IsValid())
@@ -200,7 +222,7 @@ float UStatusComponent::GetCalculatedBattleStat(const FGameplayTag& StatTag, con
 		Debug::PrintError(TEXT("UStatusComponent::GetCalculatedBattleStat : Invalid StatTag."));
 		return -1.f;
 	}
-	
+
 	float result = 0.f;
 	if (StatTag.MatchesTag(StatTags::AttackPower))
 	{
@@ -209,8 +231,8 @@ float UStatusComponent::GetCalculatedBattleStat(const FGameplayTag& StatTag, con
 		check(IsValid(OwnerCharacter));
 		auto ItemComponent = OwnerCharacter->FindComponentByClass<UItemComponent>();
 		check(IsValid(ItemComponent));
-		
-		result = ItemComponent->GetPrimaryWeaponCoefficient() * (GetStat(StatTags::BaseAttackPower) + GetStat(StatTags::AttackPowerCoefficient) * FMath::Sqrt(InStatMap[StatTags::STR]));
+
+		result = ItemComponent->GetPrimaryWeaponCoefficient() * (GetStat(StatTags::BaseAttackPower) + GetSoftCappedScaling(InStatMap[StatTags::STR], GetStat(StatTags::AttackPowerCoefficient)));
 	}
 	else if (StatTag.MatchesTag(StatTags::SubAttackPower))
 	{
@@ -220,19 +242,19 @@ float UStatusComponent::GetCalculatedBattleStat(const FGameplayTag& StatTag, con
 		auto ItemComponent = OwnerCharacter->FindComponentByClass<UItemComponent>();
 		check(IsValid(ItemComponent));
 
-		result = ItemComponent->GetSecondaryWeaponCoefficient() * (GetStat(StatTags::BaseAttackPower) + GetStat(StatTags::AttackPowerCoefficient) * FMath::Sqrt(InStatMap[StatTags::STR]));
+		result = ItemComponent->GetSecondaryWeaponCoefficient() * (GetStat(StatTags::BaseAttackPower) + GetSoftCappedScaling(InStatMap[StatTags::STR], GetStat(StatTags::AttackPowerCoefficient)));
 	}
 	else if (StatTag.MatchesTag(StatTags::MagicPower))
 	{
-		result = GetStat(StatTags::BaseMagicPower) + GetStat(StatTags::MagicPowerCoefficient) * FMath::Sqrt(InStatMap[StatTags::SPL]);
+		result = GetStat(StatTags::BaseMagicPower) + GetSoftCappedScaling(InStatMap[StatTags::SPL], GetStat(StatTags::MagicPowerCoefficient));
 	}
 	else if (StatTag.MatchesTag(StatTags::MaxHealth))
 	{
-		result = GetStat(StatTags::BaseMaxHealth) + GetStat(StatTags::MaxHealthCoefficient) * FMath::Sqrt(InStatMap[StatTags::LIFE]);
+		result = GetStat(StatTags::BaseMaxHealth) + GetSoftCappedScaling(InStatMap[StatTags::LIFE], GetStat(StatTags::MaxHealthCoefficient));
 	}
 	else if (StatTag.MatchesTag(StatTags::MaxStamina))
 	{
-		result = GetStat(StatTags::BaseMaxStamina) + GetStat(StatTags::MaxStaminaCoefficient) * FMath::Sqrt(InStatMap[StatTags::END]);
+		result = GetStat(StatTags::BaseMaxStamina) + GetSoftCappedScaling(InStatMap[StatTags::END], GetStat(StatTags::MaxStaminaCoefficient));
 	}
 	return result;
 }
@@ -384,6 +406,12 @@ bool UStatusComponent::HasEnoughStamina(const float RequiredAmount) const
 void UStatusComponent::ConsumeStamina(const float Amount)
 {
 	SetStamina(GetStat(StatTags::Stamina) - Amount);
+
+	// 스태미너 소모 시 회복 플래그 자동 활성화
+	if (!bIsRecoveringStamina)
+	{
+		bIsRecoveringStamina = true;
+	}
 }
 
 void UStatusComponent::StartStaminaRecovery()
