@@ -59,6 +59,9 @@ protected:
 	UFUNCTION(BlueprintCallable)
 	void OnDecideButtonClicked();
 
+	// 개별 스탯 상한
+	static constexpr float MaxStatValue = 50.f;
+
 protected:
 	bool bCanLevelUp;
 
