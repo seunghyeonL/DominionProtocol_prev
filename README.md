@@ -23,6 +23,8 @@
 - 김서영 : 팀원 / 인터렉티브 오브젝트, 게임 스토리 진행 시스템
 - 조세준 : 팀원 / UI
 
+## 🧾 프로젝트 아키텍처
+- [프로젝트 아키텍처 문서](./Docs/ProjectArchitecture.md)
   
 ## 🧾 발표자료
 - [발표자료(google docs)](https://docs.google.com/presentation/d/1QTzkqL62tS3w9hb3b8MYbpPp4vnycNwf/edit?slide=id.g36c1ed65a49_59_0#slide=id.g36c1ed65a49_59_0)
