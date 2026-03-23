@@ -25,3 +25,11 @@ Saved/
 
 # DotSettings
 *.DotSettings.user
+
+Docs/Private
+nul
+
+Package_Dev/
+.omc/
+.claude/
+CLAUDE.md

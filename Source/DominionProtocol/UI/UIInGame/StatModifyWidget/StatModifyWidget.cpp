@@ -170,7 +170,8 @@ void UStatModifyWidget::OnDecideButtonClicked()
 void UStatModifyWidget::OnStrUpButtonClicked()
 {
 	if (!bCanLevelUp) return;
-	
+	if (PlayerStatPreviewData[StatTags::STR] >= MaxStatValue) return;
+
 	PlayerStatPreviewData[StatTags::STR]++;
 	StatModifiedNumMap[StatTags::STR]++;
 	StatModifiedStringMap[StatTags::STR] = FString::Printf(TEXT("%d (+%d)"), FMath::RoundToInt(PlayerStatPreviewData[StatTags::STR]), StatModifiedNumMap[StatTags::STR]);
@@ -227,6 +228,7 @@ void UStatModifyWidget::OnStrDownButtonClicked()
 void UStatModifyWidget::OnLifeUpButtonClicked()
 {
 	if (!bCanLevelUp) return;
+	if (PlayerStatPreviewData[StatTags::LIFE] >= MaxStatValue) return;
 	PlayerStatPreviewData[StatTags::LIFE]++;
 	StatModifiedNumMap[StatTags::LIFE]++;
 	StatModifiedStringMap[StatTags::LIFE] = FString::Printf(TEXT("%d (+%d)"), FMath::RoundToInt(PlayerStatPreviewData[StatTags::LIFE]), StatModifiedNumMap[StatTags::LIFE]);
@@ -276,7 +278,8 @@ void UStatModifyWidget::OnLifeDownButtonClicked()
 void UStatModifyWidget::OnSplUpButtonClicked()
 {
 	if (!bCanLevelUp) return;
-	
+	if (PlayerStatPreviewData[StatTags::SPL] >= MaxStatValue) return;
+
 	PlayerStatPreviewData[StatTags::SPL]++;
 	StatModifiedNumMap[StatTags::SPL]++;
 	StatModifiedStringMap[StatTags::SPL] = FString::Printf(TEXT("%d (+%d)"), FMath::RoundToInt(PlayerStatPreviewData[StatTags::SPL]), StatModifiedNumMap[StatTags::SPL]);
@@ -326,6 +329,7 @@ void UStatModifyWidget::OnSplDownButtonClicked()
 void UStatModifyWidget::OnEndUpButtonClicked()
 {
 	if (!bCanLevelUp) return;
+	if (PlayerStatPreviewData[StatTags::END] >= MaxStatValue) return;
 
 	PlayerStatPreviewData[StatTags::END]++;
 	StatModifiedNumMap[StatTags::END]++;

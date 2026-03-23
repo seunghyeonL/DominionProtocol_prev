@@ -1,0 +1,2837 @@
+[
+	{
+		"Name": "Skill.BaseAttack",
+		"SkillName": "BaseAttack",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Skills/Animation/AM_Sample_Attack.AM_Sample_Attack'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.PreStun"
+				},
+				"Magnitude": 0,
+				"Duration": 0
+			}
+		],
+		"Stamina": 10,
+		"AttackRadius": 100,
+		"AttackForwardOffset": 5,
+		"DamageCoefficient": 2,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 1000,
+		"LaunchZSpeed": 300,
+		"SkillTag":
+		{
+			"TagName": "Skill.BaseAttack"
+		}
+	},
+	{
+		"Name": "Skill.BaseAttack.first.Sword",
+		"SkillName": "BaseAttackSword",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Skills/Animation/AM_BaseAttack_First_Sword.AM_BaseAttack_First_Sword'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"Magnitude": 0,
+				"Duration": 1
+			}
+		],
+		"Stamina": 3,
+		"AttackRadius": 100,
+		"AttackForwardOffset": 5,
+		"DamageCoefficient": 1,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.BaseAttack.first.Sword"
+		}
+	},
+	{
+		"Name": "Skill.BaseAttack.second.Sword",
+		"SkillName": "BaseAttackSword",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Skills/Animation/AM_BaseAttack_Second_Sword2.AM_BaseAttack_Second_Sword2'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"Magnitude": 0,
+				"Duration": 1
+			}
+		],
+		"Stamina": 3,
+		"AttackRadius": 100,
+		"AttackForwardOffset": 5,
+		"DamageCoefficient": 2,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.BaseAttack.second.Sword"
+		}
+	},
+	{
+		"Name": "Skill.BaseAttack.third.Sword",
+		"SkillName": "BaseAttackSword",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Skills/Animation/AM_BaseAttack_Third_Sword3.AM_BaseAttack_Third_Sword3'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"Magnitude": 0,
+				"Duration": 1
+			}
+		],
+		"Stamina": 3,
+		"AttackRadius": 100,
+		"AttackForwardOffset": 5,
+		"DamageCoefficient": 3,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.BaseAttack.third.Sword"
+		}
+	},
+	{
+		"Name": "Skill.WeaponSkill.first.Sword",
+		"SkillName": "WeaponSkillSword",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Skills/Animation/AM_WeaponSkill_First_Sword1.AM_WeaponSkill_First_Sword1'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"Magnitude": 0,
+				"Duration": 2
+			}
+		],
+		"Stamina": 5,
+		"AttackRadius": 100,
+		"AttackForwardOffset": 5,
+		"DamageCoefficient": 5,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.WeaponSkill.first.Sword"
+		}
+	},
+	{
+		"Name": "Skill.Dash.Player",
+		"SkillName": "PlayerDash",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Skills/Animation/AM_Dash_Forward_Pose.AM_Dash_Forward_Pose'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [],
+		"Stamina": 10,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 0,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.Dash.Player"
+		}
+	},
+	{
+		"Name": "Skill.Parry.Player",
+		"SkillName": "PlayerParry",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/QuangPhan/G2RetargetedAnimations/Montage/AM_Parry.AM_Parry'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [],
+		"Stamina": 5,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 0,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.Parry"
+		}
+	},
+	{
+		"Name": "Skill.Boss1.BaseAttack.first",
+		"SkillName": "Boss1BaseAttack",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/ParagonSevarog/Characters/Heroes/Sevarog/Animations/Swing1_Slow_120fps_Montage.Swing1_Slow_120fps_Montage'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"Magnitude": 0,
+				"Duration": 0
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 0.6,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.Boss1.BaseAttack.first"
+		}
+	},
+	{
+		"Name": "Skill.Boss1.BaseAttack.second",
+		"SkillName": "Boss1BaseAttack",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/ParagonSevarog/Characters/Heroes/Sevarog/Animations/Swing2_Slow_120fps_Montage.Swing2_Slow_120fps_Montage'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"Magnitude": 0,
+				"Duration": 0
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 3,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.Boss1.BaseAttack.second"
+		}
+	},
+	{
+		"Name": "Skill.Boss1.BaseAttack.third",
+		"SkillName": "Boss1BaseAttack",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/ParagonSevarog/Characters/Heroes/Sevarog/Animations/Swing3_Slow_120fps_Montage.Swing3_Slow_120fps_Montage'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Flew"
+				},
+				"Magnitude": 0,
+				"Duration": 0
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 1.5,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.Boss1.BaseAttack.third"
+		}
+	},
+	{
+		"Name": "Skill.Boss1.SuperAttack.first",
+		"SkillName": "Boss1SuperAttack",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/ParagonSevarog/Characters/Heroes/Sevarog/Animations/Ultimate_Swing_120fps_Montage.Ultimate_Swing_120fps_Montage'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"Magnitude": 0,
+				"Duration": 0
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 1,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.Boss1.SuperAttack.first"
+		}
+	},
+	{
+		"Name": "Skill.Boss1.SuperAttack.second",
+		"SkillName": "Boss1SuperAttack",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/ParagonSevarog/Characters/Heroes/Sevarog/Animations/Recall1_Montage.Recall1_Montage'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Flew"
+				},
+				"Magnitude": 0,
+				"Duration": 0
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 350,
+		"AttackForwardOffset": 100,
+		"DamageCoefficient": 1.5,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.Boss1.SuperAttack.second"
+		}
+	},
+	{
+		"Name": "Skill.Boss1.SpecialAttack.first",
+		"SkillName": "Boss1SpecialAttack",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/ParagonSevarog/Characters/Heroes/Sevarog/Animations/Soul_Siphon_Montage.Soul_Siphon_Montage'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stun"
+				},
+				"Magnitude": 0,
+				"Duration": 2.6
+			},
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Status.Debuff.Poison"
+				},
+				"Magnitude": 2,
+				"Duration": 10
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 330,
+		"AttackForwardOffset": 200,
+		"DamageCoefficient": 0.4,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.Boss1.SpecialAttack.first"
+		}
+	},
+	{
+		"Name": "Skill.Boss1.SpecialAttack.second",
+		"SkillName": "Boss1SpecialAttack",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/ParagonSevarog/Characters/Heroes/Sevarog/Animations/Melee_A_Med_Montage.Melee_A_Med_Montage'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Flew"
+				},
+				"Magnitude": 0,
+				"Duration": 0
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 2.2,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.Boss1.SpecialAttack.second"
+		}
+	},
+	{
+		"Name": "Skill.Boss1.EvadeAttack",
+		"SkillName": "Boss1EvadeAttack",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/ParagonSevarog/Characters/Heroes/Sevarog/Animations/Melee_B_Med_Montage.Melee_B_Med_Montage'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"Magnitude": 0,
+				"Duration": 0
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 0.4,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.Boss1.EvadeAttack"
+		}
+	},
+	{
+		"Name": "Skill.Boss1.JumpAttack",
+		"SkillName": "Boss1JumpAttack",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/ParagonSevarog/Characters/Heroes/Sevarog/Animations/Ultimate_Montage.Ultimate_Montage'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Flew"
+				},
+				"Magnitude": 0,
+				"Duration": 0
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 400,
+		"AttackForwardOffset": 100,
+		"DamageCoefficient": 2,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.Boss1.JumpAttack"
+		}
+	},
+	{
+		"Name": "Skill.Boss1.RangedAttack",
+		"SkillName": "Boss1RangedAttack",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/ParagonSevarog/Characters/Heroes/Sevarog/Animations/Soul_Siphon_Targeting_Montage.Soul_Siphon_Targeting_Montage'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 0.3,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.Boss1.RangedAttack"
+		}
+	},
+	{
+		"Name": "Skill.Boss1.LevelStart",
+		"SkillName": "Boss1LevelStart",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/ParagonSevarog/Characters/Heroes/Sevarog/Animations/LevelStart_2_Montage.LevelStart_2_Montage'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 0,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.Boss1.LevelStart"
+		}
+	},
+	{
+		"Name": "Skill.Boss1.Parried",
+		"SkillName": "Boss1Parried",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/ParagonSevarog/Characters/Heroes/Sevarog/Animations/AS_Block_Hit_Break_Seq1_Montage.AS_Block_Hit_Break_Seq1_Montage'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 0,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "None"
+		}
+	},
+	{
+		"Name": "Skill.NomalMonster.AxeSkeleton.ComboAttack",
+		"SkillName": "SkeletonComboAttack",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Skills/Animation/NomalMonster/AM_combo_attack_ver__2_Montage.AM_combo_attack_ver__2_Montage'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"Magnitude": 0,
+				"Duration": 0.2
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 1,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.NomalMonster.AxeSkeleton.ComboAttack"
+		}
+	},
+	{
+		"Name": "Skill.NomalMonster.Minion.BaseAttack",
+		"SkillName": "MinionBaseAttack",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Skills/Animation/NomalMonster/AM_Attack_A_Montage.AM_Attack_A_Montage'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"Magnitude": 0,
+				"Duration": 0.3
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 1,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.NomalMonster.Minion.BaseAttack"
+		}
+	},
+	{
+		"Name": "Skill.NomalMonster.Wood.Swiping",
+		"SkillName": "WoodSwiping",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Skills/Animation/NomalMonster/AM_Wood_swiping_Montage.AM_Wood_swiping_Montage'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "None"
+				},
+				"Magnitude": 30,
+				"Duration": 0.5
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 1,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.NomalMonster.Wood.Swiping"
+		}
+	},
+	{
+		"Name": "Skill.NomalMonster.Wood.HurricaneKick",
+		"SkillName": "HurricaneKick",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Skills/Animation/NomalMonster/AM_Wood_Hurricane_Kick_Montage.AM_Wood_Hurricane_Kick_Montage'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Skill.NomalMonster.Wood.HurricaneKick"
+				},
+				"Magnitude": 0,
+				"Duration": 0.2
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 1,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.NomalMonster.Wood.HurricaneKick"
+		}
+	},
+	{
+		"Name": "Skill.BaseAttack.first.Axe",
+		"SkillName": "BaseAttackAxe",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Skills/Animation/Axe/AM_BaseAttack_First_Axe.AM_BaseAttack_First_Axe'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 1,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "None"
+		}
+	},
+	{
+		"Name": "Skill.BaseAttack.Second.Axe",
+		"SkillName": "BaseAttackAxe",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Skills/Animation/Axe/AM_BaseAttack_Second_Axe.AM_BaseAttack_Second_Axe'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 2,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "None"
+		}
+	},
+	{
+		"Name": "Skill.BaseAttack.third.Axe",
+		"SkillName": "BaseAttackAxe",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Skills/Animation/Axe/AM_BaseAttack_Third_Axe.AM_BaseAttack_Third_Axe'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 3,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "None"
+		}
+	},
+	{
+		"Name": "Skill.WeaponSkill.first.Axe",
+		"SkillName": "WeaponSkillAxe",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Skills/Animation/Axe/AM_WeaponSkill_First_Axe.AM_WeaponSkill_First_Axe'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 5,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "None"
+		}
+	},
+	{
+		"Name": "Skill.BaseAttack.first.Claw",
+		"SkillName": "BaseAttackClaw",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Dev/YMW/Claw/Animation/AM_Base_First_Claw.AM_Base_First_Claw'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 1,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "None"
+		}
+	},
+	{
+		"Name": "Skill.BaseAttack.Second.Claw",
+		"SkillName": "BaseAttackClaw",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Dev/YMW/Claw/Animation/AM_Base_Second_Claw.AM_Base_Second_Claw'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 1,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "None"
+		}
+	},
+	{
+		"Name": "Skill.BaseAttack.third.Claw",
+		"SkillName": "BaseAttackClaw",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Dev/YMW/Claw/Animation/AM_Base_Third_Claw.AM_Base_Third_Claw'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 1,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "None"
+		}
+	},
+	{
+		"Name": "Skill.BaseAttack.fourth.Claw",
+		"SkillName": "BaseAttackClaw",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Dev/YMW/Claw/Animation/AM_Base_Fourth_Claw.AM_Base_Fourth_Claw'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 2,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "None"
+		}
+	},
+	{
+		"Name": "Skill.WeaponSkill.first.Claw",
+		"SkillName": "WeaponSkillClaw",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Dev/YMW/Claw/Animation/AM_Weapon_First_Claw.AM_Weapon_First_Claw'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 2,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "None"
+		}
+	},
+	{
+		"Name": "Skill.Boss2.BaseAttack1.first",
+		"SkillName": "None",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Boss/Boss2/Animation/AM_Boss2BaseAttack1First.AM_Boss2BaseAttack1First'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"Magnitude": 0,
+				"Duration": 0.3
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 1,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "None"
+		}
+	},
+	{
+		"Name": "Skill.Boss2.BaseAttack1.Second",
+		"SkillName": "None",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Boss/Boss2/Animation/AM_Boss2BaseAttack1Second.AM_Boss2BaseAttack1Second'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"Magnitude": 0,
+				"Duration": 0.3
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 1.2,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "None"
+		}
+	},
+	{
+		"Name": "Skill.Boss2.BaseAttack1.third",
+		"SkillName": "None",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Boss/Boss2/Animation/AM_Boss2BaseAttack1Third.AM_Boss2BaseAttack1Third'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"Magnitude": 0,
+				"Duration": 0.3
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 1.5,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "None"
+		}
+	},
+	{
+		"Name": "Skill.Boss2.BaseAttack1.fourth",
+		"SkillName": "None",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Boss/Boss2/Animation/AM_Boss2BaseAttack1Fourth.AM_Boss2BaseAttack1Fourth'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"Magnitude": 0,
+				"Duration": 0.3
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 2,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "None"
+		}
+	},
+	{
+		"Name": "Skill.Boss2.BaseAttack2.first",
+		"SkillName": "None",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Boss/Boss2/Animation/AM_Boss2BaseAttack2First.AM_Boss2BaseAttack2First'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"Magnitude": 0,
+				"Duration": 0.3
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 0.8,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "None"
+		}
+	},
+	{
+		"Name": "Skill.Boss2.BaseAttack2.second",
+		"SkillName": "None",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Boss/Boss2/Animation/AM_Boss2BaseAttack2Second.AM_Boss2BaseAttack2Second'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"Magnitude": 0,
+				"Duration": 0.3
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 1.2,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "None"
+		}
+	},
+	{
+		"Name": "Skill.Boss2.BaseAttack2.third",
+		"SkillName": "None",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Boss/Boss2/Animation/AM_Boss2BaseAttack2Third.AM_Boss2BaseAttack2Third'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"Magnitude": 0,
+				"Duration": 0.3
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 1.5,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "None"
+		}
+	},
+	{
+		"Name": "Skill.Boss2.BaseAttack2.fourth",
+		"SkillName": "None",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Boss/Boss2/Animation/AM_Boss2BaseAttack2Fourth.AM_Boss2BaseAttack2Fourth'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"Magnitude": 0,
+				"Duration": 0.3
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 1.8,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "None"
+		}
+	},
+	{
+		"Name": "Skill.Boss2.BaseAttack2.fifth",
+		"SkillName": "None",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Boss/Boss2/Animation/AM_Boss2BaseAttack2Fifth.AM_Boss2BaseAttack2Fifth'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.PreStun"
+				},
+				"Magnitude": 0,
+				"Duration": 0
+			},
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"Magnitude": 0,
+				"Duration": 0.3
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 2.5,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "None"
+		}
+	},
+	{
+		"Name": "Skill.Boss2.Circling",
+		"SkillName": "None",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "None",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 0,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.Boss2.Circling"
+		}
+	},
+	{
+		"Name": "Skill.Boss2.DashAttack.first",
+		"SkillName": "None",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Boss/Boss2/Animation/AM_Boss2DashAttackFirst.AM_Boss2DashAttackFirst'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 0,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "None"
+		}
+	},
+	{
+		"Name": "Skill.Boss2.DashAttack.second",
+		"SkillName": "None",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Boss/Boss2/Animation/AM_Boss2DashAttackSecond.AM_Boss2DashAttackSecond'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.PreStun"
+				},
+				"Magnitude": 0,
+				"Duration": 0
+			},
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"Magnitude": 0,
+				"Duration": 0.3
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 3,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "None"
+		}
+	},
+	{
+		"Name": "Skill.Boss2.DashAttack.third",
+		"SkillName": "None",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Boss/Boss2/Animation/AM_Boss2DashAttackThird.AM_Boss2DashAttackThird'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.PreStun"
+				},
+				"Magnitude": 0,
+				"Duration": 0
+			},
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"Magnitude": 0,
+				"Duration": 0
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 3,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "None"
+		}
+	},
+	{
+		"Name": "Skill.Boss2.DashAttackB.first",
+		"SkillName": "None",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Boss/Boss2/Animation/AM_Boss2DashAttackBFirst.AM_Boss2DashAttackBFirst'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 0,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "None"
+		}
+	},
+	{
+		"Name": "Skill.Boss2.DashAttackB.second",
+		"SkillName": "None",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Boss/Boss2/Animation/AM_Boss2DashAttackBSecond.AM_Boss2DashAttackBSecond'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.PreStun"
+				},
+				"Magnitude": 0,
+				"Duration": 0
+			},
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"Magnitude": 0,
+				"Duration": 0.3
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 3,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "None"
+		}
+	},
+	{
+		"Name": "Skill.Boss2.EvadeAttack.first",
+		"SkillName": "None",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Boss/Boss2/Animation/AM_EvadeAttackFirst.AM_EvadeAttackFirst'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.PreStun"
+				},
+				"Magnitude": 0,
+				"Duration": 0
+			},
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"Magnitude": 0,
+				"Duration": 0.3
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 2,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "None"
+		}
+	},
+	{
+		"Name": "Skill.Boss2.EvadeAttack.second",
+		"SkillName": "None",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Boss/Boss2/Animation/AM_EvadeAttackSecond.AM_EvadeAttackSecond'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.PreStun"
+				},
+				"Magnitude": 0,
+				"Duration": 0
+			},
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"Magnitude": 0,
+				"Duration": 0.3
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 3,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "None"
+		}
+	},
+	{
+		"Name": "Skill.Boss2.Dash",
+		"SkillName": "None",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "None",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 0,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "None"
+		}
+	},
+	{
+		"Name": "Skill.NomalMonster.KnifeSkeleton.KnifeThrow",
+		"SkillName": "KnifeThrow",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Skills/Animation/NomalMonster/AM_Throw_Anim_Montage.AM_Throw_Anim_Montage'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "/Script/Engine.BlueprintGeneratedClass'/Game/Blueprints/Skills/SkillObject/BP_Knife.BP_Knife_C'",
+		"Effects": [],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 1,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.NomalMonster.KnifeSkeleton.KnifeThrow"
+		}
+	},
+	{
+		"Name": "Skill.NomalMonster.GunMinion.MinionFire",
+		"SkillName": "MinionFire",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Skills/Animation/NomalMonster/AM_Fire_B_Montage.AM_Fire_B_Montage'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "/Script/Engine.BlueprintGeneratedClass'/Game/Blueprints/Skills/SkillObject/CurvedProjectile/BP_RailGun.BP_RailGun_C'",
+		"Effects": [],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 1,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.NomalMonster.Minion.MinionFire"
+		}
+	},
+	{
+		"Name": "Skill.NomalMonster.SwordSkeleton.BaseAttack",
+		"SkillName": "SwordSkeletonBaseAttack",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Skills/Animation/NomalMonster/AM_swordSkeleton_attack__3.AM_swordSkeleton_attack__3'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"Magnitude": 1,
+				"Duration": 0.8
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 1,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.NomalMonster.SwordSkeleton.BaseAttack"
+		}
+	},
+	{
+		"Name": "Skill.NomalMonster.DualBladeSkeleton.BaseAttack",
+		"SkillName": "DualBladeSkeletonBaseAttack",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Skills/Animation/NomalMonster/AM_DualBladeSkeletonBaseAttack.AM_DualBladeSkeletonBaseAttack'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"Magnitude": 0,
+				"Duration": 0.5
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 1,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.NomalMonster.DualBladeSkeleton.BaseAttack"
+		}
+	},
+	{
+		"Name": "Skill.NomalMonster.DualBladeSkeleton.JumpAttack",
+		"SkillName": "DualBladeSkeletonJumpAttack",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Skills/Animation/NomalMonster/AM_DualBladeSkeletonJumpAttack.AM_DualBladeSkeletonJumpAttack'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"Magnitude": 0,
+				"Duration": 0.8
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 1.5,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.NomalMonster.DualBladeSkeleton.JumpAttack"
+		}
+	},
+	{
+		"Name": "Skill.NomalMonster.EliteGolem.GolemSmash",
+		"SkillName": "GolemSmash",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Skills/Animation/NomalMonster/AM_GolemSmash_Montage.AM_GolemSmash_Montage'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stun"
+				},
+				"Magnitude": 0,
+				"Duration": 1.5
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 150,
+		"AttackForwardOffset": 80,
+		"DamageCoefficient": 2,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.NomalMonster.EliteGolem.GolemSmash"
+		}
+	},
+	{
+		"Name": "Skill.MagicSkill.Laser",
+		"SkillName": "MagicSkillLaser",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Skills/Animation/AS_MagicSkill_Laser.AS_MagicSkill_Laser'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [
+			"None",
+			"None"
+		],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"Magnitude": 0,
+				"Duration": 1
+			}
+		],
+		"Stamina": 20,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 2,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.MagicSkill.Laser"
+		}
+	},
+	{
+		"Name": "Skill.MagicSkill.RailGun",
+		"SkillName": "MagicSkilRailGun",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Skills/Animation/RailGun/AM_RailGun.AM_RailGun'",
+		"Sounds": [
+			"/Script/Engine.SoundCue'/Game/Sound/Skill/RailGun/SC_RailGunShoot.SC_RailGunShoot'",
+			"/Script/Engine.SoundCue'/Game/Sound/Skill/RailGun/SC_RailGunHit.SC_RailGunHit'"
+		],
+		"Particles": [],
+		"NiagaraParticles": [
+			"/Script/Niagara.NiagaraSystem'/Game/Blueprints/Skills/SkillObject/CurvedProjectile/VFX_Niagara/NS_RailGunHit.NS_RailGunHit'"
+		],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "/Script/Engine.BlueprintGeneratedClass'/Game/Blueprints/Skills/SkillObject/CurvedProjectile/BP_RailGun.BP_RailGun_C'",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"Magnitude": 0,
+				"Duration": 1
+			}
+		],
+		"Stamina": 10,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 1,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.MagicSkill.RailGun"
+		}
+	},
+	{
+		"Name": "Skill.MagicSkill.Fireball",
+		"SkillName": "MagicSkillFireBall",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Skills/Animation/FireBall/AM_FireBall.AM_FireBall'",
+		"Sounds": [
+			"/Script/Engine.SoundCue'/Game/Sound/Skill/FireBall/SC_FireBallShoot.SC_FireBallShoot'",
+			"/Script/Engine.SoundCue'/Game/Sound/Skill/FireBall/SC_FireBallHit.SC_FireBallHit'"
+		],
+		"Particles": [],
+		"NiagaraParticles": [
+			"/Script/Niagara.NiagaraSystem'/Game/Blueprints/Skills/SkillObject/CurvedProjectile/VFX_Niagara/NS_FireBallHit.NS_FireBallHit'"
+		],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "/Script/Engine.BlueprintGeneratedClass'/Game/Blueprints/Skills/SkillObject/CurvedProjectile/BP_FireBall.BP_FireBall_C'",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"Magnitude": 0,
+				"Duration": 1
+			}
+		],
+		"Stamina": 10,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 0.5,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.MagicSkill.Fireball"
+		}
+	},
+	{
+		"Name": "Skill.MagicSkill.Zoneya",
+		"SkillName": "MagicSkillZoneya",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "None",
+		"Sounds": [
+			"/Script/Engine.SoundCue'/Game/Sound/Skill/Zoneya/SC_Zoneya.SC_Zoneya'"
+		],
+		"Particles": [],
+		"NiagaraParticles": [
+			"/Script/Niagara.NiagaraSystem'/Game/Blueprints/Skills/SkillObject/Zoneya/VFX_Niagara/NA_MagicCircle.NA_MagicCircle'"
+		],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [],
+		"Stamina": 10,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 0,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.MagicSkill.Zoneya"
+		}
+	},
+	{
+		"Name": "Skill.MagicSkill.InfiniteStamina",
+		"SkillName": "MagicSkillInfiniteStamina",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "None",
+		"Sounds": [
+			"/Script/Engine.SoundCue'/Game/Sound/Skill/InfiniteStamina/SC_InfiniteStamina.SC_InfiniteStamina'"
+		],
+		"Particles": [],
+		"NiagaraParticles": [
+			"/Script/Niagara.NiagaraSystem'/Game/Blueprints/Skills/SkillObject/InfiniteStamina/VFX_Niagara/NS_InfiniteStamina.NS_InfiniteStamina'"
+		],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 0,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.MagicSkill.InfiniteStamina"
+		}
+	},
+	{
+		"Name": "Skill.MagicSkill.Teleport",
+		"SkillName": "MagicSkillTeleport",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "None",
+		"Sounds": [
+			"/Script/Engine.SoundCue'/Game/Sound/Skill/Teleport/SC_Teleport1.SC_Teleport1'",
+			"/Script/Engine.SoundCue'/Game/Sound/Skill/Teleport/SC_Teleport2.SC_Teleport2'"
+		],
+		"Particles": [
+			"/Script/Engine.ParticleSystem'/Game/Blueprints/Skills/SkillObject/Teleport/Particles/P_ky_healAura.P_ky_healAura'",
+			"/Script/Engine.ParticleSystem'/Game/Blueprints/Skills/SkillObject/Teleport/Particles/P_ky_magicCircle1.P_ky_magicCircle1'"
+		],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [],
+		"Stamina": 10,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 0,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.MagicSkill.Teleport"
+		}
+	},
+	{
+		"Name": "Skill.MagicSkill.ItemScanning",
+		"SkillName": "Skill.MagicSkill.ItemScanning",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Skills/Animation/ItemScanning/AM_ItemScanning.AM_ItemScanning'",
+		"Sounds": [
+			"/Script/Engine.SoundCue'/Game/Sound/Skill/ItemScanning/SC_ItemScanning.SC_ItemScanning'"
+		],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [],
+		"Stamina": 10,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 0,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.MagicSkill.ItemScanning"
+		}
+	},
+	{
+		"Name": "Skill.Boss4.BaseAttack.first",
+		"SkillName": "BaseAttack",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Boss/Boss4/Animation/AS_Combo_Attack_01_01_Seq_Montage.AS_Combo_Attack_01_01_Seq_Montage'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"Magnitude": 0,
+				"Duration": 0.6
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 1,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "None"
+		}
+	},
+	{
+		"Name": "Skill.Boss4.BaseAttack.second",
+		"SkillName": "BaseAttack",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Boss/Boss4/Animation/AS_Combo_Attack_01_02_Seq_Montage.AS_Combo_Attack_01_02_Seq_Montage'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"Magnitude": 0,
+				"Duration": 0.6
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 1,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "None"
+		}
+	},
+	{
+		"Name": "Skill.Boss4.FlameStrike",
+		"SkillName": "FlameStrike",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Boss/Boss4/Animation/AS_Combo_Attack_02_01_Seq_Montage.AS_Combo_Attack_02_01_Seq_Montage'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"Magnitude": 0,
+				"Duration": 0.6
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 1,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "None"
+		}
+	},
+	{
+		"Name": "Skill.Boss4.SpawnClone",
+		"SkillName": "SpawnClone",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Boss/Boss4/SpawnClone/AS_Turn_180_L_Seq_Montage.AS_Turn_180_L_Seq_Montage'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 100,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "None"
+		}
+	},
+	{
+		"Name": "Skill.Boss4.InfernoSpike",
+		"SkillName": "InfernoSpike",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Boss/Boss4/Animation/AS_Skill_03_Seq_Montage.AS_Skill_03_Seq_Montage'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"Magnitude": 0,
+				"Duration": 0.6
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 1,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "None"
+		}
+	},
+	{
+		"Name": "Skill.Boss4.HellfireFall",
+		"SkillName": "HellfireFall",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Boss/Boss4/HellfireFall/AS_Attack_Up_Floor_To_Air_02_Seq_Montage.AS_Attack_Up_Floor_To_Air_02_Seq_Montage'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 1,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "None"
+		}
+	},
+	{
+		"Name": "Skill.Boss4.BlazeSphere",
+		"SkillName": "BlazeSphere",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Boss/Boss4/Animation/AS_Combo_Attack_04_01_Seq_Montage.AS_Combo_Attack_04_01_Seq_Montage'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [
+			"/Script/Niagara.NiagaraSystem'/Game/Blueprints/Skills/SkillObject/CurvedProjectile/VFX_Niagara/NS_FireBallHit.NS_FireBallHit'"
+		],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"Magnitude": 0,
+				"Duration": 0.6
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 1,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "None"
+		}
+	},
+	{
+		"Name": "Skill.Boss4.BackDash",
+		"SkillName": "BackDash",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Boss/Boss4/Animation/AS_Dodge_B_180_Seq_Montage.AS_Dodge_B_180_Seq_Montage'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 0,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "None"
+		}
+	},
+	{
+		"Name": "Skill.Boss4.Teleport",
+		"SkillName": "Teleport",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Boss/Boss4/Animation/AS_Combo_Attack_02_04_Seq_Montage.AS_Combo_Attack_02_04_Seq_Montage'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 0,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "None"
+		}
+	},
+	{
+		"Name": "Skill.Boss3.BaseAttack1.first",
+		"SkillName": "None",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Dev/JCH/GolemAnim/AM_Boss3BaseAttack1First.AM_Boss3BaseAttack1First'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"Magnitude": 30,
+				"Duration": 0.5
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 1.2,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.Boss3.BaseAttack1.first"
+		}
+	},
+	{
+		"Name": "Skill.Boss3.BaseAttack1.second",
+		"SkillName": "None",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Dev/JCH/GolemAnim/AM_Boss3BaseAttack1second.AM_Boss3BaseAttack1second'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"Magnitude": 30,
+				"Duration": 0.5
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 1.2,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.Boss3.BaseAttack1.second"
+		}
+	},
+	{
+		"Name": "Skill.Boss3.BaseAttack1.third",
+		"SkillName": "None",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Dev/JCH/GolemAnim/AM_Boss3BaseAttack1third.AM_Boss3BaseAttack1third'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"Magnitude": 30,
+				"Duration": 0.5
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 1,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.Boss3.BaseAttack1.third"
+		}
+	},
+	{
+		"Name": "Skill.Boss3.BaseAttack2.first",
+		"SkillName": "None",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Dev/JCH/GolemAnim/AM_Boss3_HitTheGroundAttack_Montage.AM_Boss3_HitTheGroundAttack_Montage'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"Magnitude": 30,
+				"Duration": 0.5
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 2,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.Boss3.BaseAttack2.first"
+		}
+	},
+	{
+		"Name": "Skill.Boss3.RockThrow.RockThrow",
+		"SkillName": "None",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Dev/JCH/GolemAnim/AM_Boss3_Throw_Heavy_Rock_Montage.AM_Boss3_Throw_Heavy_Rock_Montage'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "/Script/Engine.BlueprintGeneratedClass'/Game/Blueprints/Skills/SkillObject/BP_Boss3Rock.BP_Boss3Rock_C'",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stun"
+				},
+				"Magnitude": 30,
+				"Duration": 0.5
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 1.5,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.Boss3.RockThrow.RockThrow"
+		}
+	},
+	{
+		"Name": "Skill.Boss3.TurningAttack.TurningAttack",
+		"SkillName": "None",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Dev/JCH/GolemAnim/AM_Boss3_TurningAttack_Montage.AM_Boss3_TurningAttack_Montage'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "/Script/Engine.BlueprintGeneratedClass'/Game/Blueprints/Skills/SkillObject/BP_Boss3Rock.BP_Boss3Rock_C'",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"Magnitude": 30,
+				"Duration": 0.5
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 0.7,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.Boss3.TurningAttack.TurningAttack"
+		}
+	},
+	{
+		"Name": "Skill.Boss3.GroundFall.GroundFall",
+		"SkillName": "None",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Dev/JCH/GolemAnim/AM_Boss3_GroundFallAttack_Montage.AM_Boss3_GroundFallAttack_Montage'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "/Script/Engine.BlueprintGeneratedClass'/Game/Blueprints/Skills/SkillObject/BP_Boss3Rock.BP_Boss3Rock_C'",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Flew"
+				},
+				"Magnitude": 30,
+				"Duration": 1
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 2,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.Boss3.GroundFall.GroundFall"
+		}
+	},
+	{
+		"Name": "Skill.Boss3.Grab.Grab",
+		"SkillName": "None",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Dev/JCH/GolemAnim/AM_Boss3Grab.AM_Boss3Grab'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "/Script/Engine.BlueprintGeneratedClass'/Game/Blueprints/Skills/SkillObject/BP_Boss3Rock.BP_Boss3Rock_C'",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stun"
+				},
+				"Magnitude": 30,
+				"Duration": 3
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 400,
+		"AttackForwardOffset": 100,
+		"DamageCoefficient": 0,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.Boss3.Grab.Grab"
+		}
+	},
+	{
+		"Name": "Skill.Boss3.Grab.GrabAttack",
+		"SkillName": "None",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Dev/JCH/GolemAnim/AM_Boss3GrabAttack_Montage.AM_Boss3GrabAttack_Montage'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "/Script/Engine.BlueprintGeneratedClass'/Game/Blueprints/Skills/SkillObject/BP_Boss3Rock.BP_Boss3Rock_C'",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Flew"
+				},
+				"Magnitude": 30,
+				"Duration": 3
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 1.5,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 1500,
+		"LaunchZSpeed": 300,
+		"SkillTag":
+		{
+			"TagName": "Skill.Boss3.Grab.GrabAttack"
+		}
+	},
+	{
+		"Name": "Skill.Boss3.RushAttack.RushAttack",
+		"SkillName": "Boss3RushAttack",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Dev/JCH/GolemAnim/AM_Boss3RushAttack.AM_Boss3RushAttack'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Flew"
+				},
+				"Magnitude": 0,
+				"Duration": 1
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 1.5,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 300,
+		"LaunchZSpeed": 1500,
+		"SkillTag":
+		{
+			"TagName": "Skill.Boss3.RushAttack.RushAttack"
+		}
+	},
+	{
+		"Name": "Skill.Boss5.ZoneyaAttack",
+		"SkillName": "Boss5ZoneyaAttack",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "None",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 1.2,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.Boss5.ZoneyaAttack"
+		}
+	},
+	{
+		"Name": "Skill.DashAttack.Sword",
+		"SkillName": "DashAttackSword",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/QuangPhan/G2RetargetedAnimations/Montage/AM_Sword_Attack_Dodge.AM_Sword_Attack_Dodge'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [],
+		"Stamina": 10,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 1,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.DashAttack.Sword"
+		}
+	},
+	{
+		"Name": "Skill.DashAttack.Claw",
+		"SkillName": "DashAttackClaw",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/QuangPhan/G2RetargetedAnimations/Montage/AM_Claws_Attack_Dodge.AM_Claws_Attack_Dodge'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [],
+		"Stamina": 10,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 1,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.DashAttack.Claw"
+		}
+	},
+	{
+		"Name": "Skill.DashAttack.Axe",
+		"SkillName": "DashAttackAxe",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/QuangPhan/G2RetargetedAnimations/Montage/AM_Axe_Attack_Dodge.AM_Axe_Attack_Dodge'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [],
+		"Stamina": 10,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 1,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.DashAttack.Axe"
+		}
+	},
+	{
+		"Name": "Skill.Boss4.WeaponAttack1.start",
+		"SkillName": "Boss4WeaponAttack1",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Boss/Boss4/Animation/wp_equip_Montage.wp_equip_Montage'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"Magnitude": 0,
+				"Duration": 0
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 0,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "None"
+		}
+	},
+	{
+		"Name": "Skill.Boss4.WeaponAttack1.first",
+		"SkillName": "Boss4WeaponAttack1",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Boss/Boss4/Animation/attack_FlyingATK05_Montage.attack_FlyingATK05_Montage'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"Magnitude": 0,
+				"Duration": 0.6
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 3,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "None"
+		}
+	},
+	{
+		"Name": "Skill.Boss4.WeaponAttack1.second",
+		"SkillName": "Boss4WeaponAttack1",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Boss/Boss4/Animation/attack_FlyingATK06_Montage.attack_FlyingATK06_Montage'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"Magnitude": 0,
+				"Duration": 0.6
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 3,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "None"
+		}
+	},
+	{
+		"Name": "Skill.Boss4.WeaponAttack1.third",
+		"SkillName": "Boss4WeaponAttack1",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Blueprints/Boss/Boss4/Animation/attack_FlyingATK07_Montage.attack_FlyingATK07_Montage'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"Magnitude": 0,
+				"Duration": 0.6
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 3,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "None"
+		}
+	},
+	{
+		"Name": "Skill.Boss3.BaseAttack3.first",
+		"SkillName": "None",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Dev/JCH/GolemAnim/AM_Boss3BaseAttack3First.AM_Boss3BaseAttack3First'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"Magnitude": 0,
+				"Duration": 0.3
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 0.8,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 0,
+		"LaunchZSpeed": 0,
+		"SkillTag":
+		{
+			"TagName": "Skill.Boss3.BaseAttack3.first"
+		}
+	},
+	{
+		"Name": "Skill.Boss3.BaseAttack3.second",
+		"SkillName": "None",
+		"bIsMagicSkill": false,
+		"CoolDownTime": 0,
+		"AnimMontage": "/Script/Engine.AnimMontage'/Game/Dev/JCH/GolemAnim/AM_Boss3BaseAttack3second.AM_Boss3BaseAttack3second'",
+		"Sounds": [],
+		"Particles": [],
+		"NiagaraParticles": [],
+		"SkillMaterials": [],
+		"CurvedProjectileClass": "None",
+		"Effects": [
+			{
+				"EffectTag":
+				{
+					"TagName": "Effect.Control.Flew"
+				},
+				"Magnitude": 0,
+				"Duration": 1
+			}
+		],
+		"Stamina": 0,
+		"AttackRadius": 0,
+		"AttackForwardOffset": 0,
+		"DamageCoefficient": 1.2,
+		"GroggyDamage": 0,
+		"LaunchGroundSpeed": 1500,
+		"LaunchZSpeed": 200,
+		"SkillTag":
+		{
+			"TagName": "Skill.Boss3.BaseAttack3.second"
+		}
+	}
+]

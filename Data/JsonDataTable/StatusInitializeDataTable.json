@@ -1,0 +1,1681 @@
+[
+	{
+		"Name": "Pawn.Player",
+		"StatDatas": [
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Base.Level"
+				},
+				"Value": 1
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Base.LIFE"
+				},
+				"Value": 1
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Base.STR"
+				},
+				"Value": 1
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Base.SPL"
+				},
+				"Value": 1
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Base.END"
+				},
+				"Value": 1
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Base.BaseAttackPower"
+				},
+				"Value": 80
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Base.BaseMagicPower"
+				},
+				"Value": 60
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Base.BaseMaxHealth"
+				},
+				"Value": 400
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Base.BaseMaxStamina"
+				},
+				"Value": 80
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Coefficient.AttackPower"
+				},
+				"Value": 35
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Coefficient.MagicPower"
+				},
+				"Value": 45
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Coefficient.MaxHealth"
+				},
+				"Value": 150
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Coefficient.MaxStamina"
+				},
+				"Value": 18
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Coefficient.LevelUpB"
+				},
+				"Value": 3.5
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Coefficient.LevelUpC"
+				},
+				"Value": 50
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Coefficient.LevelUpD"
+				},
+				"Value": 500
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Coefficient.SoftCapThreshold"
+				},
+				"Value": 25
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Coefficient.PostSoftCapMultiplier"
+				},
+				"Value": 0.5
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.MaxHealth"
+				},
+				"Value": 0
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.MaxStamina"
+				},
+				"Value": 0
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.AttackPower"
+				},
+				"Value": 0
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.SubAttackPower"
+				},
+				"Value": 0
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.MagicPower"
+				},
+				"Value": 0
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.Health"
+				},
+				"Value": 0
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.Stamina"
+				},
+				"Value": 0
+			}
+		],
+		"EffectClassDatas": [
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Status.Running"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.PlayerRunningEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Status.Debuff.Poison"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.PoisonEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Status.Debuff.AttackDown"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AttackDownEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Status.Debuff.Slow"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.SlowEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Status.Debuff.Burn"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.BurnEffect'"
+			}
+		]
+	},
+	{
+		"Name": "Pawn.Enemy.Normal.Proto",
+		"StatDatas": [
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.MaxHealth"
+				},
+				"Value": 100
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.MaxShield"
+				},
+				"Value": 0
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.AttackPower"
+				},
+				"Value": 10
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.Defense"
+				},
+				"Value": 100
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.Health"
+				},
+				"Value": 100
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.Shield"
+				},
+				"Value": 0
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.GroggyGauge"
+				},
+				"Value": 0
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.MaxGroggyGauge"
+				},
+				"Value": 100
+			}
+		],
+		"EffectClassDatas": [
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIStiffnessEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Control.Death"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIDeathEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Status.Debuff.Poison"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.PoisonEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Status.Debuff.AttackDown"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AttackDownEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Control.Parried"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIParriedEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Control.Groggy"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIGroggyEffect'"
+			}
+		]
+	},
+	{
+		"Name": "Pawn.Enemy.Boss.Proto",
+		"StatDatas": [
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.MaxHealth"
+				},
+				"Value": 100
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.MaxShield"
+				},
+				"Value": 0
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.AttackPower"
+				},
+				"Value": 10
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.Defense"
+				},
+				"Value": 100
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.Health"
+				},
+				"Value": 100
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.Shield"
+				},
+				"Value": 0
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.GroggyGauge"
+				},
+				"Value": 100
+			}
+		],
+		"EffectClassDatas": [
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIStiffnessEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Control.Death"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIDeathEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Status.Debuff.Poison"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.PoisonEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Status.Debuff.AttackDown"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AttackDownEffect'"
+			}
+		]
+	},
+	{
+		"Name": "Pawn.Enemy.Normal.ArrowProto",
+		"StatDatas": [
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.Health"
+				},
+				"Value": 100
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.AttackPower"
+				},
+				"Value": 10
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.MaxHealth"
+				},
+				"Value": 100
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.Shield"
+				},
+				"Value": 0
+			}
+		],
+		"EffectClassDatas": [
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIStiffnessEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Control.Death"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIDeathEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Control.Parried"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIParriedEffect'"
+			}
+		]
+	},
+	{
+		"Name": "Pawn.Enemy.Normal.AxeSkeleton",
+		"StatDatas": [
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.MaxHealth"
+				},
+				"Value": 120
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.MaxShield"
+				},
+				"Value": 0
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.AttackPower"
+				},
+				"Value": 100
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.Defense"
+				},
+				"Value": 100
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.Health"
+				},
+				"Value": 1
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.Shield"
+				},
+				"Value": 0
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.GroggyGauge"
+				},
+				"Value": 100
+			}
+		],
+		"EffectClassDatas": [
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIStiffnessEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Control.Death"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIDeathEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Status.Debuff.Poison"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIStunEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Status.Debuff.AttackDown"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AttackDownEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Control.Parried"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIParriedEffect'"
+			}
+		]
+	},
+	{
+		"Name": "Pawn.Enemy.Normal.Minion",
+		"StatDatas": [
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.MaxHealth"
+				},
+				"Value": 200
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.MaxShield"
+				},
+				"Value": 0
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.AttackPower"
+				},
+				"Value": 100
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.Defense"
+				},
+				"Value": 100
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.Health"
+				},
+				"Value": 150
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.Shield"
+				},
+				"Value": 0
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.GroggyGauge"
+				},
+				"Value": 100
+			}
+		],
+		"EffectClassDatas": [
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIStiffnessEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Control.Death"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIDeathEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Status.Debuff.Poison"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIStunEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Status.Debuff.AttackDown"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AttackDownEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Control.Parried"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIParriedEffect'"
+			}
+		]
+	},
+	{
+		"Name": "Pawn.Enemy.Normal.Wood",
+		"StatDatas": [
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.MaxHealth"
+				},
+				"Value": 350
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.MaxShield"
+				},
+				"Value": 0
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.AttackPower"
+				},
+				"Value": 100
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.Defense"
+				},
+				"Value": 100
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.Health"
+				},
+				"Value": 180
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.Shield"
+				},
+				"Value": 0
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.GroggyGauge"
+				},
+				"Value": 100
+			}
+		],
+		"EffectClassDatas": [
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIStiffnessEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Control.Death"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIDeathEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Status.Debuff.Poison"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIStunEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Status.Debuff.AttackDown"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AttackDownEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Control.Parried"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIParriedEffect'"
+			}
+		]
+	},
+	{
+		"Name": "Pawn.Enemy.Boss.1",
+		"StatDatas": [
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.MaxHealth"
+				},
+				"Value": 2000
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.MaxShield"
+				},
+				"Value": 0
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.AttackPower"
+				},
+				"Value": 100
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.Defense"
+				},
+				"Value": 100
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.Health"
+				},
+				"Value": 2000
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.Shield"
+				},
+				"Value": 0
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.GroggyGauge"
+				},
+				"Value": 0
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.MaxGroggyGauge"
+				},
+				"Value": 200
+			}
+		],
+		"EffectClassDatas": [
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Control.Death"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIDeathEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Control.Parried"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIParriedEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Control.Groggy"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIGroggyEffect'"
+			}
+		]
+	},
+	{
+		"Name": "Pawn.Enemy.Boss.2",
+		"StatDatas": [
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.AttackPower"
+				},
+				"Value": 100
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.MaxHealth"
+				},
+				"Value": 2500
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.Defense"
+				},
+				"Value": 10
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.Health"
+				},
+				"Value": 2500
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.Shield"
+				},
+				"Value": 0
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.MaxShield"
+				},
+				"Value": 0
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.GroggyGauge"
+				},
+				"Value": 0
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.MaxGroggyGauge"
+				},
+				"Value": 300
+			}
+		],
+		"EffectClassDatas": [
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Control.Death"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIDeathEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Control.Parried"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIParriedEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Control.Groggy"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIGroggyEffect'"
+			}
+		]
+	},
+	{
+		"Name": "Pawn.Enemy.Boss.3",
+		"StatDatas": [
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.AttackPower"
+				},
+				"Value": 150
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.MaxHealth"
+				},
+				"Value": 4000
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.Defense"
+				},
+				"Value": 10
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.Health"
+				},
+				"Value": 40000
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.Shield"
+				},
+				"Value": 0
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.MaxShield"
+				},
+				"Value": 0
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.GroggyGauge"
+				},
+				"Value": 0
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.MaxGroggyGauge"
+				},
+				"Value": 600
+			}
+		],
+		"EffectClassDatas": [
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Control.Death"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIDeathEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Control.Groggy"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIParriedEffect'"
+			}
+		]
+	},
+	{
+		"Name": "Pawn.Enemy.Boss.4",
+		"StatDatas": [
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.AttackPower"
+				},
+				"Value": 120
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.MaxHealth"
+				},
+				"Value": 3500
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.Defense"
+				},
+				"Value": 10
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.Health"
+				},
+				"Value": 3500
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.Shield"
+				},
+				"Value": 0
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.MaxShield"
+				},
+				"Value": 0
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.GroggyGauge"
+				},
+				"Value": 0
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.MaxGroggyGauge"
+				},
+				"Value": 300
+			}
+		],
+		"EffectClassDatas": [
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Control.Death"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIDeathEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Control.Groggy"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIGroggyEffect'"
+			}
+		]
+	},
+	{
+		"Name": "Pawn.Enemy.Boss.5",
+		"StatDatas": [
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.AttackPower"
+				},
+				"Value": 0
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.MaxHealth"
+				},
+				"Value": 3500
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.Defense"
+				},
+				"Value": 10
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.Health"
+				},
+				"Value": 3500
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.Shield"
+				},
+				"Value": 0
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.MaxShield"
+				},
+				"Value": 0
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.GroggyGauge"
+				},
+				"Value": 0
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.MaxGroggyGauge"
+				},
+				"Value": 500
+			}
+		],
+		"EffectClassDatas": [
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Control.Death"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIDeathEffect'"
+			}
+		]
+	},
+	{
+		"Name": "Pawn.Enemy.Normal.KnifeSkeleton",
+		"StatDatas": [
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.MaxHealth"
+				},
+				"Value": 200
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.MaxShield"
+				},
+				"Value": 0
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.AttackPower"
+				},
+				"Value": 100
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.Defense"
+				},
+				"Value": 100
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.Health"
+				},
+				"Value": 90
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.Shield"
+				},
+				"Value": 0
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.GroggyGauge"
+				},
+				"Value": 100
+			}
+		],
+		"EffectClassDatas": [
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIStiffnessEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Control.Death"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIDeathEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Status.Debuff.Poison"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIStunEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Status.Debuff.AttackDown"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AttackDownEffect'"
+			}
+		]
+	},
+	{
+		"Name": "Pawn.Enemy.Normal.GunMinion",
+		"StatDatas": [
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.MaxHealth"
+				},
+				"Value": 150
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.MaxShield"
+				},
+				"Value": 0
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.AttackPower"
+				},
+				"Value": 100
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.Defense"
+				},
+				"Value": 100
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.Health"
+				},
+				"Value": 105
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.Shield"
+				},
+				"Value": 0
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.GroggyGauge"
+				},
+				"Value": 100
+			}
+		],
+		"EffectClassDatas": [
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIStiffnessEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Control.Death"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIDeathEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Status.Debuff.Poison"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIStunEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Status.Debuff.AttackDown"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AttackDownEffect'"
+			}
+		]
+	},
+	{
+		"Name": "Pawn.Enemy.Normal.SwordSkeleton",
+		"StatDatas": [
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.MaxHealth"
+				},
+				"Value": 350
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.MaxShield"
+				},
+				"Value": 0
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.AttackPower"
+				},
+				"Value": 180
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.Defense"
+				},
+				"Value": 100
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.Health"
+				},
+				"Value": 350
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.Shield"
+				},
+				"Value": 0
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.GroggyGauge"
+				},
+				"Value": 300
+			}
+		],
+		"EffectClassDatas": [
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIStiffnessEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Control.Death"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIDeathEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Status.Debuff.Poison"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIStunEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Status.Debuff.AttackDown"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AttackDownEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Control.Parried"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIParriedEffect'"
+			}
+		]
+	},
+	{
+		"Name": "Pawn.Enemy.Normal.DualBladeSkeleton",
+		"StatDatas": [
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.MaxHealth"
+				},
+				"Value": 400
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.MaxShield"
+				},
+				"Value": 0
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.AttackPower"
+				},
+				"Value": 250
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.Defense"
+				},
+				"Value": 100
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.Health"
+				},
+				"Value": 1
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.Shield"
+				},
+				"Value": 0
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.GroggyGauge"
+				},
+				"Value": 0
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.MaxGroggyGauge"
+				},
+				"Value": 200
+			}
+		],
+		"EffectClassDatas": [
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIStiffnessEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Control.Death"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIDeathEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Status.Debuff.Poison"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIStunEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Status.Debuff.AttackDown"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AttackDownEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Control.Parried"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIParriedEffect'"
+			}
+		]
+	},
+	{
+		"Name": "Pawn.Enemy.Normal.EliteGolem",
+		"StatDatas": [
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.MaxHealth"
+				},
+				"Value": 1000
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.MaxShield"
+				},
+				"Value": 0
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.AttackPower"
+				},
+				"Value": 180
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.Defense"
+				},
+				"Value": 100
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.Health"
+				},
+				"Value": 1
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.Shield"
+				},
+				"Value": 0
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.GroggyGauge"
+				},
+				"Value": 100
+			}
+		],
+		"EffectClassDatas": [
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Control.Debuff.Stiffness"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIStiffnessEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Control.Death"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIDeathEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Status.Debuff.Poison"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIStunEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Status.Debuff.AttackDown"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AttackDownEffect'"
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Control.Parried"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIParriedEffect'"
+			}
+		]
+	},
+	{
+		"Name": "Pawn.Enemy.Boss.4.Clone",
+		"StatDatas": [
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.AttackPower"
+				},
+				"Value": 5
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.MaxHealth"
+				},
+				"Value": 1e+08
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.Defense"
+				},
+				"Value": 10
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.Health"
+				},
+				"Value": 1e+08
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.Shield"
+				},
+				"Value": 0
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.MaxShield"
+				},
+				"Value": 0
+			}
+		],
+		"EffectClassDatas": [
+			{
+				"Tag":
+				{
+					"TagName": "Effect.Control.Death"
+				},
+				"EffectClass": "/Script/CoreUObject.Class'/Script/DominionProtocol.AIDeathEffect'"
+			}
+		]
+	},
+	{
+		"Name": "Pawn.Enemy.Boss.4.Clone.2Phase",
+		"StatDatas": [
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.AttackPower"
+				},
+				"Value": 30
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.MaxHealth"
+				},
+				"Value": 1e+08
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.Defense"
+				},
+				"Value": 10
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.Health"
+				},
+				"Value": 1e+08
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Variable.Shield"
+				},
+				"Value": 0
+			},
+			{
+				"Tag":
+				{
+					"TagName": "Stat.Battle.MaxShield"
+				},
+				"Value": 0
+			}
+		],
+		"EffectClassDatas": []
+	}
+]
