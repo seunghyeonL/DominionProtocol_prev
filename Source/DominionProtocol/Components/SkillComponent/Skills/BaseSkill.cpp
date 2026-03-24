@@ -299,7 +299,8 @@ float UBaseSkill::GetFinalAttackData() const
 
 bool UBaseSkill::CheckParry(AActor* HitActor) const
 {
-	FVector AttackDirectionVector = HitActor->GetActorLocation() - OwnerCharacter->GetActorLocation() ;
+	FVector AttackDirectionVector = HitActor->GetActorLocation() - OwnerCharacter->GetActorLocation();
+	AttackDirectionVector = AttackDirectionVector.GetSafeNormal();
 	FVector TargetForwardVector = HitActor->GetActorForwardVector();
 
 	float RadianAngle = FMath::Acos(FVector::DotProduct(TargetForwardVector, -AttackDirectionVector));
