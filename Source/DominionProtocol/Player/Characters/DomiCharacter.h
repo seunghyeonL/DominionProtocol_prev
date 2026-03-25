@@ -15,7 +15,6 @@
 #include "Interface/Parryable.h"
 #include "DomiCharacter.generated.h"
 
-class UNavigationInvokerComponent;
 class UStatusComponent;
 class USkillComponent;
 class UItemComponent;
@@ -190,9 +189,6 @@ protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
 	UItemComponent* ItemComponent;
 
-	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Components", meta = (AllowPrivateAccess = "true"))
-	TObjectPtr<UNavigationInvokerComponent> NavigationInvokerComponent;
-	
 	/** Camera boom positioning the camera behind the character */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	USpringArmComponent* CameraBoom;
