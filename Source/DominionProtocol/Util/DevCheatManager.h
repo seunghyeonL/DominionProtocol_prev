@@ -47,7 +47,10 @@ public:
 	void ForceMoveToCrack(int32 TargetCrackIndex);
 
 	UFUNCTION(Exec)
-	void StoryState(EGameStoryState NewStoryState);
+	void GetStoryState();
+	
+	UFUNCTION(Exec)
+	void SetStoryState(EGameStoryState NewStoryState);
 	
 	UFUNCTION(Exec)
 	void GetCurrentStoryState();

@@ -113,7 +113,18 @@ void UDevCheatManager::ForceMoveToCrack(int32 TargetCrackIndex)
 	UCheatBPLib::ForceMoveToCrack(GetWorld(), TargetCrackIndex, Cast<ADomiCharacter>(GetOuterAPlayerController()->GetPawn()));
 }
 
-void UDevCheatManager::StoryState(EGameStoryState NewStoryState)
+void UDevCheatManager::GetStoryState()
+{
+	UWorld* World = GetOuter()->GetWorld();
+	if (!IsValid(World)) return;
+
+	UDomiGameInstance* GI = Cast<UDomiGameInstance>(World->GetGameInstance());
+	if (!IsValid(GI)) return;
+	
+	Debug::Print(FString::Printf(TEXT("Current Story State : %d"), GI->GetCurrentGameStoryState()));
+}
+
+void UDevCheatManager::SetStoryState(EGameStoryState NewStoryState)
 {
 	UWorld* World = GetOuter()->GetWorld();
 	if (!IsValid(World)) return;
