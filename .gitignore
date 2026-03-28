@@ -32,4 +32,9 @@ nul
 Package_Dev/
 .omc/
 .claude/
+
+opencode.json
 CLAUDE.md
+AGENTS.md
+
+McpAutomationBridge/

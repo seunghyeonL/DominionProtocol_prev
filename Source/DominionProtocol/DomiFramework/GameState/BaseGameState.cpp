@@ -176,6 +176,12 @@ void ABaseGameState::InitializeGame()
 				if (!GameInstance->GetStatDataMap().IsEmpty())
 				{
 					StatusComponent->SetStatMap(GameInstance->GetStatDataMap());
+
+					// SetStatMap은 raw 대입이라 UI 델리게이트가 발송되지 않으므로 수동 브로드캐스트
+					StatusComponent->OnMaxHealthChanged.Broadcast(StatusComponent->GetStat(StatTags::MaxHealth));
+					StatusComponent->OnMaxStaminaChanged.Broadcast(StatusComponent->GetStat(StatTags::MaxStamina));
+					StatusComponent->OnHealthChanged.Broadcast(StatusComponent->GetStat(StatTags::Health));
+					StatusComponent->OnStaminaChanged.Broadcast(StatusComponent->GetStat(StatTags::Stamina));
 				}
 			}
 		}

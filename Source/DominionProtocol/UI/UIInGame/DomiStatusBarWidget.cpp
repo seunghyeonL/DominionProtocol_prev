@@ -46,7 +46,7 @@ void UDomiStatusBarWidget::UpdatePlayerStaminaBar(const float NewStamina)
 void UDomiStatusBarWidget::UpdatePlayerMaxStaminaBar(const float NewMaxStamina)
 {
 	AlphaForStaminaAnim = 0.0f;
-	PreStamina = MaxStamina;
+	PreMaxStamina = MaxStamina;
 	MaxStamina = NewMaxStamina;
 }
 
@@ -81,11 +81,15 @@ void UDomiStatusBarWidget::SetupStatusBarWidget(AActor* OwningActor)
 	auto* StatusComp = OwningActor->GetComponentByClass<UStatusComponent>();
 	if (StatusComp)
 	{
-		// Initialize 
+		// Initialize
 		MaxHP = StatusComp->GetStat(StatTags::MaxHealth);
 		MaxStamina = StatusComp->GetStat(StatTags::MaxStamina);
 		CurrentHP = StatusComp->GetStat(StatTags::Health);
 		CurrentStamina = StatusComp->GetStat(StatTags::Stamina);
+		PreHP = CurrentHP;
+		PreMaxHP = MaxHP;
+		PreStamina = CurrentStamina;
+		PreMaxStamina = MaxStamina;
 
 		// Delegate Binding
 		StatusComp->OnHealthChanged.AddDynamic(this, &UDomiStatusBarWidget::UpdatePlayerHPBar);

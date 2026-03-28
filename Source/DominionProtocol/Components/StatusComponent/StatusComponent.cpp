@@ -178,9 +178,36 @@ void UStatusComponent::UpdateStatPreviewData(TMap<FGameplayTag, float>& UIPlayer
 
 void UStatusComponent::DecideStatChangeFromUI(const TMap<FGameplayTag, float>& UIPlayerStatData)
 {
-	for (const auto& [UIStatTag, UIStatValue ] : UIPlayerStatData)
+	// 1. 기본 스탯 (Max 계산에 필요한 스탯들 먼저)
+	for (const auto& [UIStatTag, UIStatValue] : UIPlayerStatData)
 	{
-		SetStat(UIStatTag, UIPlayerStatData[UIStatTag]);
+		if (!UIStatTag.MatchesTag(StatTags::BattleStat) && !UIStatTag.MatchesTag(StatTags::VariableStat))
+		{
+			SetStat(UIStatTag, UIStatValue);
+		}
+	}
+
+	// 2. BattleStat (MaxHealth, MaxStamina, AttackPower 등) — 델리게이트 발송을 위해 전용 Setter 사용
+	for (const auto& [UIStatTag, UIStatValue] : UIPlayerStatData)
+	{
+		if (UIStatTag.MatchesTag(StatTags::BattleStat))
+		{
+			if (UIStatTag == StatTags::MaxHealth) SetMaxHealth(UIStatValue);
+			else if (UIStatTag == StatTags::MaxStamina) SetMaxStamina(UIStatValue);
+			else if (UIStatTag == StatTags::AttackPower) SetAttackPower(UIStatValue);
+			else SetStat(UIStatTag, UIStatValue);
+		}
+	}
+
+	// 3. VariableStat (Health, Stamina 등) — Max 갱신 후 실행해야 Clamp가 올바르게 적용됨
+	for (const auto& [UIStatTag, UIStatValue] : UIPlayerStatData)
+	{
+		if (UIStatTag.MatchesTag(StatTags::VariableStat))
+		{
+			if (UIStatTag == StatTags::Health) SetHealth(UIStatValue);
+			else if (UIStatTag == StatTags::Stamina) SetStamina(UIStatValue);
+			else SetStat(UIStatTag, UIStatValue);
+		}
 	}
 }
 
